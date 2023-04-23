@@ -49,7 +49,7 @@ apt install -y feh
 apt install -y fonts-firacode fonts-liberation2 fonts-ubuntu papirus-icon-theme fonts-cascadia-code
 
 # Openbox packages
-apt install -y openbox dunst dbus-x11 hsetroot i3lock libnotify-bin lximage-qt menu picom  qt5-style-plugins rofi scrot tint2 xfce4-power-manager 
+apt install -y openbox dunst dbus-x11 hsetroot i3lock libnotify-bin lximage-qt menu picom qt5-style-plugins rofi scrot tint2 xfce4-power-manager 
 
 # LXDM login manager
 apt install -y lxdm
