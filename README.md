@@ -2,66 +2,247 @@
 
 ## Debian Minimal Installation
 
-Bla.
+## Xorg
 
-## Openbox Window Manager
+```bash
+apt install xorg xbacklight xbindkeys xvkbd xinput xserver-xorg-input-all
+```
 
-### Windown Manager
+## X11 Dependency
+
+```bash
+apt install dbus-x11
+```
+
+## Build Essential
+
+```bash
+apt install build-essential
+```
+
+## Sound (PulseAudio Volume Control)
+
+```bash
+apt install pavucontrol pulseaudio pulseaudio-utils alsa-utils volumeicon-alsa
+```
+
+## Microcode for Intel/AMD 
+
+```bash
+apt install intel-microcode
+```
+
+## Network File Tools/System Events
+
+```bash
+apt install -y dialog mtools dosfstools avahi-daemon acpi acpid gvfs gvfs-backends
+```
+
+# i3lock
+
+```bash
+apt install i3lock
+```
+
+## Network Manager
+
+```bash
+apt install network-manager network-manager-gnome
+```
+
+## Windown Manager
 
 ```bash
 apt install openbox
 ```
 
-### Debian Menu
+## Debian Menu
 
 ```bash
 apt install menu
 ```
 
-### Preferences Manager for Openbox
+## Preferences Manager
 
 ```bash
 apt install obconf
 ```
 
-### Openbox Menu
+## Openbox Menu
 
 ```bash
 apt install openbox-menu
 ```
 
-### Display Manager
+## Display Manager
 
 ```bash
 apt install lightdm
-systemctl enable lightdm
 ```
 
-### File Manager
+## Appearance Management
 
 ```bash
-apt install thunar
+apt install lxappearance 
+```
+
+### libnotify-bin
+
+```bash
+apt install libnotify-bin
+```
+
+### lximage-qt
+
+```bash
+apt install lximage-qt
+```
+
+### qt5-style-plugins
+
+```bash
+apt install qt5-style-plugins
+```
+
+## Window Switcher, Run Dialog and dmenu Replacemen
+
+```bash
+apt install rofi
+```
+
+## Notification
+
+```bash
+apt install dunst
+```
+
+## File Manager
+
+```bash
+apt install thunar thunar-archive-plugin thunar-media-tags-plugin thunar-volman gamin xdg-user-dirs
 ```
 
 Or `pcmanfm`.
 
-### Lightweight Taskbar
+## Archive
+
+```bash
+apt install xarchiver
+```
+
+## Lightweight Taskbar/Panel
 
 ```bash
 apt install tint2
 ```
 
-### Terminal
+### Lightweight Compositor
+
+```bash
+apt install picom
+```
+
+## Terminal
 
 ```bash
 apt install terminator
 ```
 
-### Wallpaper Browser and Changing Utility for X
-
+## Text Editor
 ```bash
-apt install nitrogen
+apt install nano vim micro geany
 ```
 
-Or `feh`.
+## Browser
 
+```bash
+apt install firefox-esr chromium
+```
+
+## Power Manager
+
+```bash
+apt install xfce4-power-manager
+```
+
+## Desktop Background
+
+```bash
+apt install feh nitrogen hsetroot
+```
+
+## Theme
+
+```bash
+apt install
+```
+
+## Fonts
+
+```bash
+apt install fonts-jetbrains-mono fonts-firacode fonts-liberation2 fonts-ubuntu fonts-cascadia-code
+```
+
+## Screen Capture Utility
+
+```bash
+apt install scrot
+```
+
+## Onscreen Keyboard
+
+```bash
+apt install onboard
+```
+
+## Scan
+
+```bash
+apt install simple-scan
+```
+
+## Neofetch
+
+```bash
+apt install neofetch
+```
+
+## HTOP
+
+```bash
+apt install htop
+```
+
+## Mouse
+
+```bash
+apt install unclutter arandr
+```
+
+## Git and gh
+
+```bash
+apt install git gh
+```
+
+## Copy Openbox Default Configuration
+
+```bash
+mkdir -p /home/nashrullahalifauzi/.config/openbox
+cp /etc/xdg/openbox/* /home/nashrullahalifauzi/.config/openbox/
+```
+
+## Enable Systemctl
+
+```bash
+systemctl enable avahi-daemon
+systemctl enable acpid
+systemctl enable lightdm
+```
+
+Add `exec openbox-session` to `~/.xinitrc`, run `startx`.
+
+
+https://www.opendesktop.org/p/1316887
+
+https://www.opendesktop.org/p/1166289
